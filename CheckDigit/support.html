@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート | 検査数字</title>
+<style>
+  :root { --bg:#f7f9fb; --card:#ffffff; --text:#1a202c; --sub:#5a6572; --accent:#ff3b30; --line:#e3e8ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#15181c; --card:#1f242a; --text:#e8ecf0; --sub:#9aa4ae; --line:#333a42; }
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+         background:var(--bg); color:var(--text); line-height:1.9; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+  nav { font-size:.85rem; margin-bottom:28px; }
+  nav a { color:var(--sub); text-decoration:none; }
+  nav a:hover { color:var(--accent); }
+  h1 { font-size:1.4rem; margin-bottom:6px; }
+  h1::after { content:""; display:block; width:56px; height:5px; border-radius:3px;
+              background:var(--accent); margin-top:10px; }
+  h2 { font-size:1.05rem; margin:28px 0 8px; }
+  p { margin-bottom:12px; font-size:.95rem; }
+  ul { margin:0 0 12px 1.4em; font-size:.95rem; }
+  li { margin-bottom:4px; }
+  .lead { color:var(--sub); font-size:.9rem; margin:14px 0 30px; }
+  .faq { background:var(--card); border:1px solid var(--line); border-radius:12px;
+         padding:16px 20px; margin-bottom:12px; }
+  .faq h3 { font-size:.95rem; margin-bottom:6px; }
+  .faq p { color:var(--sub); font-size:.9rem; margin:0; }
+  .faq ul { color:var(--sub); font-size:.9rem; margin:6px 0 0 1.4em; }
+  .note { color:var(--sub); font-size:.85rem; }
+  a { color:var(--accent); }
+  footer { margin-top:44px; color:var(--sub); font-size:.8rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a href="../index.html">← アプリ一覧</a></nav>
+  <h1>検査数字 サポート</h1>
+  <p class="lead">「検査数字」をご利用いただきありがとうございます。</p>
+
+  <h2>検査数字とは</h2>
+  <p>「検査数字」は、JANコード・ISBN・法人番号・マイナンバーなどのチェックデジット(検査数字)を算出・検証するiOSアプリです。</p>
+
+  <h2>使い方</h2>
+  <ul>
+    <li>ホームの一覧から方式を選びます。(JAN・ISBNなどはプリセットから選択できます)</li>
+    <li>「算出」タブで検査数字を除いた番号を入力すると、検査数字と完成番号が表示されます。</li>
+    <li>「検証」タブで検査数字込みの番号を入力すると、正誤を判定します。</li>
+    <li>結果の「計算過程を見る」を開くと、途中式をステップごとに確認できます。</li>
+    <li>各方式の解説は、計算画面右上の ⓘ から読めます。</li>
+  </ul>
+
+  <h2>よくある質問</h2>
+
+  <div class="faq">
+    <h3>Q. 法人番号はどこに検査数字が付きますか?</h3>
+    <p>A. 法人番号だけは末尾ではなく先頭に付きます。12桁の基礎番号(会社法人等番号)を入力すると、先頭に付く1桁を算出します。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 運転免許証番号で結果が一致しません</h3>
+    <p>A. 運転免許証の検査数字の算出方法は公的に公開されていません。本アプリの実装は公開情報からの推定式による参考実装であり、結果の正確性は保証されません。あらかじめご了承ください。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. マイナンバーを計算しても履歴に残りません</h3>
+    <p>A. 仕様です。マイナンバー・運転免許証・クレジットカードは実在の番号が入力される可能性があるため、履歴保存は初期設定でオフになっています。設定画面から方式ごとに有効化できます。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. ISBN-10の検証で末尾が「X」の番号はどう入力しますか?</h3>
+    <p>A. 検証モードでは末尾の X(エックス)をそのまま入力できます。X は検査数字が10になる場合の表記です。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 検証しただけで、その番号が実在するかは分かりますか?</h3>
+    <p>A. 分かりません。本アプリは番号の形式(検査数字の整合性)のみを確認します。形式が正しくても実在しない番号はあり得ます。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 入力した番号が外部に送られることはありますか?</h3>
+    <p>A. ありません。本アプリは通信機能を持たず、すべての処理は端末内で完結します。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+  </div>
+
+  <h2>お問い合わせ</h2>
+  <p>上記で解決しない場合は、下記までお気軽にお問い合わせください。</p>
+  <p><a href="mailto:app04460@gmail.com">app04460@gmail.com</a></p>
+  <p class="note">※個人開発のため、返信までお時間をいただく場合があります。あらかじめご了承ください。</p>
+
+  <footer><a href="privacy.html" style="color:var(--sub)">プライバシーポリシー</a></footer>
+</div>
+</body>
+</html>

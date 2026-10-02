@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート | 文字図鑑</title>
+<style>
+  :root { --bg:#f7f9fb; --card:#ffffff; --text:#1a202c; --sub:#5a6572; --accent:#ff3b30; --line:#e3e8ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#15181c; --card:#1f242a; --text:#e8ecf0; --sub:#9aa4ae; --line:#333a42; }
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+         background:var(--bg); color:var(--text); line-height:1.9; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+  nav { font-size:.85rem; margin-bottom:28px; }
+  nav a { color:var(--sub); text-decoration:none; }
+  nav a:hover { color:var(--accent); }
+  h1 { font-size:1.4rem; margin-bottom:6px; }
+  h1::after { content:""; display:block; width:56px; height:5px; border-radius:3px;
+              background:var(--accent); margin-top:10px; }
+  h2 { font-size:1.05rem; margin:28px 0 8px; }
+  p { margin-bottom:12px; font-size:.95rem; }
+  ul { margin:0 0 12px 1.4em; font-size:.95rem; }
+  li { margin-bottom:4px; }
+  .lead { color:var(--sub); font-size:.9rem; margin:14px 0 30px; }
+  .faq { background:var(--card); border:1px solid var(--line); border-radius:12px;
+         padding:16px 20px; margin-bottom:12px; }
+  .faq h3 { font-size:.95rem; margin-bottom:6px; }
+  .faq p { color:var(--sub); font-size:.9rem; margin:0; }
+  .faq ul { color:var(--sub); font-size:.9rem; margin:6px 0 0 1.4em; }
+  .note { color:var(--sub); font-size:.85rem; }
+  a { color:var(--accent); }
+  footer { margin-top:44px; color:var(--sub); font-size:.8rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a href="../index.html">← アプリ一覧</a></nav>
+  <h1>文字図鑑 サポート</h1>
+  <p class="lead">「文字図鑑」をご利用いただきありがとうございます。</p>
+
+  <h2>文字図鑑とは</h2>
+  <p>お使いのiPhoneにインストールされているフォントを選び、そのフォントが収録している文字を一覧できるアプリです。Windowsの「文字コード表」のiPhone版としてお使いいただけます。表示された文字はタップしてコピーでき、キーボードから入力しにくい記号や旧字体などを手軽に取り出せます。</p>
+
+  <h2>使い方</h2>
+  <ul>
+    <li><strong>フォントを選ぶ</strong> — 画面上部のフォント名をタップすると、フォント選択画面が開きます。「システムフォント」「最近使ったフォント」「すべてのフォント」の3つに分かれています。各フォント名は、そのフォント自身で表示されます。</li>
+    <li><strong>文字を探す</strong> — 画面下部の検索欄に、探したい文字を直接入力するか、「U+3042」のようにコードポイントを入力して検索できます。画面右上のリストボタンからは、「ひらがな」「CJK統合漢字」などのUnicodeブロックを選んでジャンプできます。</li>
+    <li><strong>文字をコピーする</strong> — 文字をタップすると詳細画面が開き、拡大表示とコードポイント、Unicode名、UTF-8/UTF-16のバイト列を確認できます。「コピー」ボタンで文字そのものが、「コードポイント」ボタンで「U+3042」形式の文字列がコピーされます。文字を長押しすると、詳細画面を開かずに直接コピーすることもできます。</li>
+    <li><strong>表示サイズを変える</strong> — 画面右上の歯車ボタンから、文字のマス目の大きさを変更できます。</li>
+  </ul>
+
+  <h2>よくあるご質問</h2>
+
+  <div class="faq">
+    <h3>Q. 空白のマスが表示されるのはなぜですか?</h3>
+    <p>A. 濁点や半濁点などの結合文字、異体字セレクタといった、それ単体では形を持たない文字が含まれているためです。これらは点線の丸(◌)を添えて表示しています。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. フォントによって表示される文字数が違うのはなぜですか?</h3>
+    <p>A. フォントごとに収録している文字が異なるためです。本アプリは、選択したフォントが実際に収録している文字だけを表示します。日本語フォントであれば約2万字、欧文フォントであれば数百字程度になります。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 検索した文字が見つかりません</h3>
+    <p>A. 「このフォントには含まれません」と表示された場合、その文字は選択中のフォントに収録されていません。別のフォント(ヒラギノ角ゴシックなど収録文字数の多いもの)を選んでお試しください。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 絵文字を一覧できますか?</h3>
+    <p>A. フォント選択画面で「Apple Color Emoji」を選ぶと、端末に収録されている絵文字を一覧できます。なお、肌の色のバリエーションや家族絵文字など、複数の文字を組み合わせて表現される絵文字は表示対象外です。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. コピーした文字が他のアプリで正しく表示されません</h3>
+    <p>A. 貼り付け先のアプリやフォントがその文字に対応していない場合、豆腐(□)などで表示されることがあります。文字自体は正しくコピーされています。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 起動時に「フォントを走査中」と表示され、少し時間がかかります</h3>
+    <p>A. 選択したフォントがどの文字を収録しているかを調べているためです。端末の再起動後の初回のみ数秒かかることがありますが、以降は高速に表示されます。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 通信は行われますか?</h3>
+    <p>A. いいえ。本アプリはインターネット通信を一切行いません。機内モードでもすべての機能をお使いいただけます。</p>
+  </div>
+
+  <h2>動作環境</h2>
+  <p>iOS 26.2 以降を搭載したiPhone</p>
+
+  <h2>お問い合わせ</h2>
+  <p>上記で解決しない場合は、下記までお気軽にお問い合わせください。</p>
+  <p><a href="mailto:app04460@gmail.com">app04460@gmail.com</a></p>
+  <p class="note">※個人開発のため、返信までお時間をいただく場合があります。あらかじめご了承ください。</p>
+
+  <footer><a href="privacy.html" style="color:var(--sub)">プライバシーポリシー</a></footer>
+</div>
+</body>
+</html>

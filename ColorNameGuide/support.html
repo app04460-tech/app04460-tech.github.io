@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート | 色名図鑑</title>
+<style>
+  :root { --bg:#f7f9fb; --card:#ffffff; --text:#1a202c; --sub:#5a6572; --accent:#ff3b30; --line:#e3e8ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#15181c; --card:#1f242a; --text:#e8ecf0; --sub:#9aa4ae; --line:#333a42; }
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+         background:var(--bg); color:var(--text); line-height:1.9; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+  nav { font-size:.85rem; margin-bottom:28px; }
+  nav a { color:var(--sub); text-decoration:none; }
+  nav a:hover { color:var(--accent); }
+  h1 { font-size:1.4rem; margin-bottom:6px; }
+  h1::after { content:""; display:block; width:56px; height:5px; border-radius:3px;
+              background:var(--accent); margin-top:10px; }
+  h2 { font-size:1.05rem; margin:28px 0 8px; }
+  p { margin-bottom:12px; font-size:.95rem; }
+  ul { margin:0 0 12px 1.4em; font-size:.95rem; }
+  li { margin-bottom:4px; }
+  .lead { color:var(--sub); font-size:.9rem; margin:14px 0 30px; }
+  .faq { background:var(--card); border:1px solid var(--line); border-radius:12px;
+         padding:16px 20px; margin-bottom:12px; }
+  .faq h3 { font-size:.95rem; margin-bottom:6px; }
+  .faq p { color:var(--sub); font-size:.9rem; margin:0; }
+  .faq ul { color:var(--sub); font-size:.9rem; margin:6px 0 0 1.4em; }
+  .note { color:var(--sub); font-size:.85rem; }
+  a { color:var(--accent); }
+  footer { margin-top:44px; color:var(--sub); font-size:.8rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a href="../index.html">← アプリ一覧</a></nav>
+  <h1>色名図鑑 サポート</h1>
+  <p class="lead">「色名図鑑」をご利用いただきありがとうございます。</p>
+
+  <h2>アプリについて</h2>
+  <p>「色名図鑑」は、JIS慣用色名(JIS Z 8102)に定められた269色を収録した、オフラインの色名図鑑アプリです。</p>
+
+  <h2>使い方</h2>
+  <ul>
+    <li><strong>一覧を眺める</strong> — 起動すると269色の色箱が並びます。上部の系統タブ(赤系・橙系・黄系・緑系・青系・紫系・茶系・無彩色系)で絞り込めます。</li>
+    <li><strong>検索する</strong> — 検索欄に色名を入力してください。漢字(東雲色)、読みがな(しののめ)、ローマ字(shinonome)のいずれでも検索できます。検索を始めると系統タブは自動的に「すべて」に切り替わります。</li>
+    <li><strong>詳しく見る</strong> — 色箱をタップすると詳細画面が開き、読み方・ローマ字・RGB成分・HEXコードを確認できます。左右にスワイプすると、一覧に表示中の色を順番にめくれます。</li>
+    <li><strong>カラーコードを使う</strong> — 詳細画面のコピーボタンで、HEXコードをクリップボードにコピーできます。</li>
+  </ul>
+
+  <h2>よくあるご質問</h2>
+
+  <div class="faq">
+    <h3>Q. 通信は発生しますか?</h3>
+    <p>A. 発生しません。すべてのデータはアプリ内に収録されており、機内モードでも全機能が動作します。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. アプリで見る色と、印刷物や他の画面の色が違って見えます。</h3>
+    <p>A. 本アプリのRGB値は、JIS Z 8102が定めるマンセル値を基にした近似値です。色の見え方はディスプレイの特性や設定によっても変わるため、厳密な色管理が必要な用途では色見本帳等をご利用ください。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 金色・銀色が普通の色に見えます。</h3>
+    <p>A. 金色・銀色は金属光沢色のため、JISでもRGB(マンセル値)の規定がありません。本アプリでは独自の代表色で表示しており、詳細画面にその旨を注記しています。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. コピーしたHEXコードがiOS標準のカラーピッカーに貼り付けられません。</h3>
+    <p>A. iOS標準カラーピッカー(フリーボードやマークアップの色選択)の16進フィールドは、先頭の「#」を受け付けない仕様です。お手数ですが「#」を除いた6桁(例: 963531)を入力してください。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 収録データの出典は?</h3>
+    <p>A. JIS Z 8102(物体色の色名)の慣用色名269色を基に、開発者が独自に編纂したデータです。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. アプリを削除するとデータは消えますか?</h3>
+    <p>A. 本アプリは利用者が作成するデータを持たないため、削除しても失われる情報はありません。再インストールすればそのままお使いいただけます。</p>
+  </div>
+
+  <h2>お問い合わせ</h2>
+  <p>上記で解決しない場合は、下記までお気軽にお問い合わせください。</p>
+  <p><a href="mailto:app04460@gmail.com">app04460@gmail.com</a></p>
+  <p class="note">※個人開発のため、返信までお時間をいただく場合があります。あらかじめご了承ください。</p>
+
+  <footer><a href="privacy.html" style="color:var(--sub)">プライバシーポリシー</a></footer>
+</div>
+</body>
+</html>

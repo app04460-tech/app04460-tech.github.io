@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート | シネマ・ダイアリー</title>
+<style>
+  :root { --bg:#f7f9fb; --card:#ffffff; --text:#1a202c; --sub:#5a6572; --accent:#ff3b30; --line:#e3e8ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#15181c; --card:#1f242a; --text:#e8ecf0; --sub:#9aa4ae; --line:#333a42; }
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+         background:var(--bg); color:var(--text); line-height:1.9; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+  nav { font-size:.85rem; margin-bottom:28px; }
+  nav a { color:var(--sub); text-decoration:none; }
+  nav a:hover { color:var(--accent); }
+  h1 { font-size:1.4rem; margin-bottom:6px; }
+  h1::after { content:""; display:block; width:56px; height:5px; border-radius:3px;
+              background:var(--accent); margin-top:10px; }
+  h2 { font-size:1.05rem; margin:28px 0 8px; }
+  p { margin-bottom:12px; font-size:.95rem; }
+  ul { margin:0 0 12px 1.4em; font-size:.95rem; }
+  li { margin-bottom:4px; }
+  .lead { color:var(--sub); font-size:.9rem; margin:14px 0 30px; }
+  .faq { background:var(--card); border:1px solid var(--line); border-radius:12px;
+         padding:16px 20px; margin-bottom:12px; }
+  .faq h3 { font-size:.95rem; margin-bottom:6px; }
+  .faq p { color:var(--sub); font-size:.9rem; margin:0; }
+  .faq ul { color:var(--sub); font-size:.9rem; margin:6px 0 0 1.4em; }
+  .note { color:var(--sub); font-size:.85rem; }
+  a { color:var(--accent); }
+  footer { margin-top:44px; color:var(--sub); font-size:.8rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a href="../index.html">← アプリ一覧</a></nav>
+  <h1>シネマ・ダイアリー サポート</h1>
+  <p class="lead">シネマ・ダイアリーは、映画館での鑑賞もビデオでの鑑賞も、一冊にまとめて記録できる映画日記アプリです。広告なし・アカウント不要・完全無料。記録はすべてお使いのiPhoneの中にのみ保存されます。</p>
+
+  <h2>主な機能</h2>
+  <ul>
+    <li>映画館とビデオの2分類。劇場名・配信サービスなどの媒体は自由に登録できます。</li>
+    <li>映画館の記録は、スクリーン・座席番号・上映時刻・料金まで残せます。</li>
+    <li>ポスター画像を設定して、グリッド表示で自分だけの棚に出来ます。</li>
+    <li>日時順・媒体順のふたつの振り返り方と、作品名・メモの検索が可能です。</li>
+    <li>年間本数のグラフで、映画と過ごした歳月をひと目で把握できます。</li>
+  </ul>
+
+  <h2>よくある質問</h2>
+
+  <div class="faq">
+    <h3>Q. データはどこに保存されますか?</h3>
+    <p>A. すべて端末内にのみ保存されます。外部サーバーへの送信や同期は一切行いません。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. ポスター画像はどこから設定できますか?</h3>
+    <p>A. 記録の追加・編集画面でポスター枠をタップすると、写真ライブラリから選択できます。アプリが写真ライブラリ全体へアクセスすることはなく、選択した画像だけがアプリ内に保存されます。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 他のアプリからデータを移行できますか?</h3>
+    <p>A. 設定 → データをインポート から、CSVと画像を含むZIPバックアップを取り込めます。取り込み時に、元アプリのカテゴリを「映画館」「ビデオ」「取り込まない」へ自由に割り当てられます。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 評価(点数)は付けられますか?</h3>
+    <p>A. 付けられません。何点だったかではなく、観たという事実と記憶を残すための日記、という考え方で設計しています。感想はメモ欄に自由に残せます。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 媒体が削除できません</h3>
+    <p>A. その媒体を使っている記録が1件でもあると削除できない仕様です。該当する記録を編集して別の媒体に変更するか、記録を削除してからお試しください。</p>
+  </div>
+
+  <h2>お問い合わせ</h2>
+  <p>上記で解決しない場合は、下記までお問い合わせください。</p>
+  <p><a href="mailto:app04460@gmail.com">app04460@gmail.com</a></p>
+  <p class="note">※個人開発のため、返信までお時間をいただく場合があります。あらかじめご了承ください。</p>
+
+  <footer><a href="privacy.html" style="color:var(--sub)">プライバシーポリシー</a></footer>
+</div>
+</body>
+</html>

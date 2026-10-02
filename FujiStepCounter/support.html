@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート | 富士山歩数計</title>
+<style>
+  :root { --bg:#f7f9fb; --card:#ffffff; --text:#1a202c; --sub:#5a6572; --accent:#ff3b30; --line:#e3e8ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#15181c; --card:#1f242a; --text:#e8ecf0; --sub:#9aa4ae; --line:#333a42; }
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+         background:var(--bg); color:var(--text); line-height:1.9; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+  nav { font-size:.85rem; margin-bottom:28px; }
+  nav a { color:var(--sub); text-decoration:none; }
+  nav a:hover { color:var(--accent); }
+  h1 { font-size:1.4rem; margin-bottom:6px; }
+  h1::after { content:""; display:block; width:56px; height:5px; border-radius:3px;
+              background:var(--accent); margin-top:10px; }
+  h2 { font-size:1.05rem; margin:28px 0 8px; }
+  p { margin-bottom:12px; font-size:.95rem; }
+  ul { margin:0 0 12px 1.4em; font-size:.95rem; }
+  li { margin-bottom:4px; }
+  .lead { color:var(--sub); font-size:.9rem; margin:14px 0 30px; }
+  .faq { background:var(--card); border:1px solid var(--line); border-radius:12px;
+         padding:16px 20px; margin-bottom:12px; }
+  .faq h3 { font-size:.95rem; margin-bottom:6px; }
+  .faq p { color:var(--sub); font-size:.9rem; margin:0; }
+  .faq ul { color:var(--sub); font-size:.9rem; margin:6px 0 0 1.4em; }
+  .note { color:var(--sub); font-size:.85rem; }
+  a { color:var(--accent); }
+  footer { margin-top:44px; color:var(--sub); font-size:.8rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a href="../index.html">← アプリ一覧</a></nav>
+  <h1>富士山歩数計 サポート</h1>
+  <p class="lead">「富士山歩数計」をご利用いただきありがとうございます。</p>
+
+  <h2>アプリについて</h2>
+  <p>富士山歩数計は、毎日の歩数を「富士山登山」に見立てて楽しく可視化する歩数計アプリです。</p>
+  <ul>
+    <li>目標歩数に対する今日の歩数の割合が、富士山の標高(五合目〜山頂3,776m)に換算されます</li>
+    <li>吉田・須走・御殿場・富士宮の4つの登山ルートから選択でき、ルートごとに実際の合目名と標高で表示されます</li>
+    <li>目標を達成すると、ご来光の祝福画面が表示されます(当日限り)</li>
+    <li>カレンダーと週間グラフで、日々の歩数と達成状況を振り返ることができます</li>
+  </ul>
+
+  <h2>よくあるご質問</h2>
+
+  <div class="faq">
+    <h3>Q. 歩数が表示されません/0歩のままです</h3>
+    <p>A. 本アプリはヘルスケア(HealthKit)から歩数を読み取ります。以下をご確認ください。</p>
+    <ul>
+      <li>iPhoneの「設定」→「プライバシーとセキュリティ」→「ヘルスケア」→「富士山歩数計」を開き、「歩数」がオンになっているか確認してください。</li>
+      <li>ヘルスケアAppに歩数が記録されているかご確認ください(iPhoneを携帯して歩くと自動で記録されます)。</li>
+    </ul>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 歩数がヘルスケアと少し違って見えます</h3>
+    <p>A. 本アプリは一定のタイミングでヘルスケアから歩数を取得します。アプリを開き直すか、メイン画面を下に引っ張って更新すると最新の値になります。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. ご来光の画面をもう一度見たいです</h3>
+    <p>A. ご来光の祝福画面は、目標を達成した当日に1回だけ表示される仕様です。本物のご来光と同じように、その日だけの特別な体験としてお楽しみください。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 目標歩数やルートを変更したいです</h3>
+    <p>A. 「設定」タブから、登山ルート(4ルート)と目標歩数(1,000〜30,000歩)をいつでも変更できます。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. データはどこに保存されますか?</h3>
+    <p>A. すべてのデータは端末内にのみ保存され、外部に送信されることはありません。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+  </div>
+
+  <h2>お問い合わせ</h2>
+  <p>上記で解決しない場合は、下記までお気軽にお問い合わせください。</p>
+  <p><a href="mailto:app04460@gmail.com">app04460@gmail.com</a></p>
+  <p class="note">※個人開発のため、返信までお時間をいただく場合があります。あらかじめご了承ください。</p>
+
+  <footer><a href="privacy.html" style="color:var(--sub)">プライバシーポリシー</a></footer>
+</div>
+</body>
+</html>
