@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート | 脳構造図鑑</title>
+<style>
+  :root { --bg:#f7f9fb; --card:#ffffff; --text:#1a202c; --sub:#5a6572; --accent:#a87c00; --line:#e3e8ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#15181c; --card:#1f242a; --text:#e8ecf0; --sub:#9aa4ae; --line:#333a42; --accent:#ffc71a; }
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+         background:var(--bg); color:var(--text); line-height:1.9; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+  nav { font-size:.85rem; margin-bottom:28px; }
+  nav a { color:var(--sub); text-decoration:none; }
+  nav a:hover { color:var(--accent); }
+  h1 { font-size:1.4rem; margin-bottom:6px; }
+  h1::after { content:""; display:block; width:56px; height:5px; border-radius:3px;
+              background:var(--accent); margin-top:10px; }
+  .lead { color:var(--sub); font-size:.9rem; margin:14px 0 30px; }
+  h2 { font-size:1.05rem; margin:28px 0 8px; }
+  p { margin-bottom:12px; font-size:.95rem; }
+  .faq { background:var(--card); border:1px solid var(--line); border-radius:12px;
+         padding:16px 20px; margin-bottom:12px; }
+  .faq h3 { font-size:.95rem; margin-bottom:6px; }
+  .faq p { color:var(--sub); font-size:.9rem; margin:0; }
+  a { color:var(--accent); }
+  footer { margin-top:44px; color:var(--sub); font-size:.8rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a href="../index.html">← アプリ一覧</a></nav>
+  <h1>脳構造図鑑 サポート</h1>
+  <p class="lead">脳の部位 63 項目の名前と位置を、3D の脳の模型で確かめられるオフライン図鑑アプリです。一覧や検索から選ぶと、模型がその部位へ寄って強調されます。視床・海馬などの奥の構造は、片側の半球を外して内側から見せます。</p>
+
+  <h2>よくある質問</h2>
+
+  <div class="faq">
+    <h3>Q. 解説文はありますか?</h3>
+    <p>A. 本アプリは、名称と位置を確かめるための図鑑です。各部位の働きなどの解説文は載せていません。詳細では、読み・英語名・別名を確認できます。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 脳神経や、小脳虫部・黒質などが見つかりません</h3>
+    <p>A. 脳神経・血管は、現在のバージョンでは収録していません。また、もとにした3Dデータ(BodyParts3D)に形が収録されていない部位(小脳の虫部・半球の区分、楔前部・舌状回などの脳回、黒質・赤核などの核)は、一覧に出ません。後頭葉・島は、脳回に分かれず 1 つの項目です。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 名前の表記は何に基づいていますか?</h3>
+    <p>A. BodyParts3D の名称表をもとに、日本解剖学会『解剖学用語』を参考に整えています。一般的な呼び方(例: 紡錘状回、アンモン角)は別名として検索できます。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. オフラインで使えますか?</h3>
+    <p>A. はい。3D模型と名称のデータはすべてアプリに内蔵されており、すべての機能が通信なしで動きます。機内モードでも使えます。</p>
+  </div>
+
+  <h2>お問い合わせ</h2>
+  <p>不具合のご報告・ご要望は、下記メールアドレスまでお願いいたします。</p>
+  <p><a href="mailto:app04460@gmail.com">app04460@gmail.com</a></p>
+
+  <footer><a href="privacy.html" style="color:var(--sub)">プライバシーポリシー</a></footer>
+</div>
+</body>
+</html>
