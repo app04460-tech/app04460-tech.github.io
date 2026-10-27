@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート | 同月同日</title>
+<style>
+  :root { --bg:#f7f9fb; --card:#ffffff; --text:#1a202c; --sub:#5a6572; --accent:#d94f2b; --line:#e3e8ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#15181c; --card:#1f242a; --text:#e8ecf0; --sub:#9aa4ae; --accent:#eb6942; --line:#333a42; }
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+         background:var(--bg); color:var(--text); line-height:1.9; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+  nav { font-size:.85rem; margin-bottom:28px; }
+  nav a { color:var(--sub); text-decoration:none; }
+  nav a:hover { color:var(--accent); }
+  h1 { font-size:1.4rem; margin-bottom:6px; }
+  h1::after { content:""; display:block; width:56px; height:5px; border-radius:3px;
+              background:var(--accent); margin-top:10px; }
+  h2 { font-size:1.05rem; margin:28px 0 8px; }
+  p { margin-bottom:12px; font-size:.95rem; }
+  ul { margin:0 0 12px 1.4em; font-size:.95rem; }
+  li { margin-bottom:4px; }
+  .lead { color:var(--sub); font-size:.9rem; margin:14px 0 30px; }
+  .faq { background:var(--card); border:1px solid var(--line); border-radius:12px;
+         padding:16px 20px; margin-bottom:12px; }
+  .faq h3 { font-size:.95rem; margin-bottom:6px; }
+  .faq p { color:var(--sub); font-size:.9rem; margin:0; }
+  .faq ul { color:var(--sub); font-size:.9rem; margin:6px 0 0 1.4em; }
+  .note { color:var(--sub); font-size:.85rem; }
+  a { color:var(--accent); }
+  footer { margin-top:44px; color:var(--sub); font-size:.8rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a href="../index.html">← アプリ一覧</a></nav>
+  <h1>同月同日 サポート</h1>
+  <p class="lead">同月同日は、同じ月日の記録を年ごとに積み重ねていく連用日記アプリです。開くとすぐ、去年や5年前の同じ日の記録が並びます。広告なし・アカウント不要。記録はすべてお使いのiPhoneの中にのみ保存されます。</p>
+
+  <h2>主な機能</h2>
+  <ul>
+    <li>1日にひとつ、ひとことから長い日記まで書けます。1行目が見出しになり、書いたそばから自動で保存されます。</li>
+    <li>今日の下に、過去の同じ月日の記録が新しい年から順に並びます。前日・翌日への移動や、カレンダーからの日付選択もできます。</li>
+    <li>その日に撮った写真と、カレンダーの予定をいっしょに表示します(表示のみで、アプリには保存しません)。</li>
+    <li>ひらがな・カタカナや全角・半角の違いを気にせずに検索できます。</li>
+    <li>ホーム画面・ロック画面のウィジェットと、毎日の通知で「N年前の今日」を振り返れます。</li>
+    <li>Face ID / パスコードによるロックと、JSON・CSV形式の書き出し・読み込みに対応しています。</li>
+  </ul>
+
+  <h2>よくある質問</h2>
+
+  <div class="faq">
+    <h3>Q. 記録はどこに保存されますか?</h3>
+    <p>A. すべてお使いのiPhoneの中にのみ保存されます。外部サーバーへの送信や、ほかの端末との同期は行いません。大切な記録は、設定 → 「JSONでエクスポート」で定期的に書き出しておくことをおすすめします。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 機種変更のときはどうすればよいですか?</h3>
+    <p>A. 古いiPhoneで 設定 → 「JSONでエクスポート」 を行い、できたファイルを「ファイル」アプリやAirDropで新しいiPhoneへ移してください。新しいiPhoneで 設定 → 「インポート…」 からそのファイルを選ぶと、作成日時も含めて記録が戻ります。同じ日の記録がすでにある場合は「上書き」「スキップ」「追記」から選べます。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 写真が表示されません</h3>
+    <p>A. 次の点をご確認ください。</p>
+    <ul>
+      <li>本アプリの 設定 → 「写真を表示」 がオンになっているか</li>
+      <li>iPhoneの 設定 → アプリ → 同月同日 → 写真 が「フルアクセス」になっているか(「制限付きアクセス」では、選んだ写真しか表示されません)</li>
+      <li>iCloud写真で「iPhoneのストレージを最適化」をお使いの場合、元の写真の読み込みにインターネット接続が必要です</li>
+    </ul>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 予定が表示されません</h3>
+    <p>A. 本アプリの 設定 → 「予定を表示」 がオンになっているか、またiPhoneの 設定 → アプリ → 同月同日 → カレンダー が「フルアクセス」になっているかをご確認ください。「予定に追加のみ」では予定を読み込めません。誕生日・祝日のカレンダーは、毎年同じ内容が並ぶため初期状態で表示しない設定にしています(設定の「対象カレンダー」で変更できます)。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 記録を書いていない年が表示されることがあります</h3>
+    <p>A. その日の写真や予定がある年は、記録がなくても表示します。「あの日、何をしていたか」の手がかりとして、そのまま「この日に書く」から書き足せます。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 過去や先の日付にも書けますか?</h3>
+    <p>A. 書けます。カレンダーで日付を選ぶか、ホームの「‹ ›」で移動して「この日に書く」をタップしてください。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. ウィジェットや通知に本文が表示されません</h3>
+    <p>A. Face IDロックをオンにしていると、記録を守るため、ウィジェットと通知には「記録あり」とだけ表示します。本文を表示したい場合は、設定 → 「ロック中もウィジェットに本文を表示」 をオンにしてください。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 通知が届かなくなりました</h3>
+    <p>A. 通知は、アプリを開いたときに約30日先までまとめて予約する仕組みです。長い間アプリを開かないと通知が途絶えることがあります。アプリを一度開くと、再び予約されます。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 2月29日の記録はどうなりますか?</h3>
+    <p>A. 2月29日の記録は、うるう年の2月29日にだけ表示します。平年の2月28日や3月1日には表示しません。</p>
+  </div>
+
+  <h2>お問い合わせ</h2>
+  <p>上記で解決しない場合は、下記までお問い合わせください。お使いのiPhoneの機種・iOSのバージョンと、どの画面で何をしたときに起きたかを書き添えていただけると、調査がスムーズです。</p>
+  <p><a href="mailto:app04460@gmail.com">app04460@gmail.com</a></p>
+  <p class="note">※個人開発のため、返信までお時間をいただく場合があります。あらかじめご了承ください。</p>
+
+  <footer><a href="privacy.html" style="color:var(--sub)">プライバシーポリシー</a></footer>
+</div>
+</body>
+</html>
