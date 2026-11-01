@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート | 鉄道路線図</title>
+<style>
+  :root { --bg:#f7f9fb; --card:#ffffff; --text:#1a202c; --sub:#5a6572; --accent:#1a8a4c; --line:#e3e8ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#15181c; --card:#1f242a; --text:#e8ecf0; --sub:#9aa4ae; --line:#333a42; --accent:#3fcf82; }
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+         background:var(--bg); color:var(--text); line-height:1.9; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+  nav { font-size:.85rem; margin-bottom:28px; }
+  nav a { color:var(--sub); text-decoration:none; }
+  nav a:hover { color:var(--accent); }
+  h1 { font-size:1.4rem; margin-bottom:6px; }
+  h1::after { content:""; display:block; width:56px; height:5px; border-radius:3px;
+              background:var(--accent); margin-top:10px; }
+  .lead { color:var(--sub); font-size:.9rem; margin:14px 0 30px; }
+  h2 { font-size:1.05rem; margin:28px 0 8px; }
+  p { margin-bottom:12px; font-size:.95rem; }
+  .faq { background:var(--card); border:1px solid var(--line); border-radius:12px;
+         padding:16px 20px; margin-bottom:12px; }
+  .faq h3 { font-size:.95rem; margin-bottom:6px; }
+  .faq p { color:var(--sub); font-size:.9rem; margin:0; }
+  a { color:var(--accent); }
+  footer { margin-top:44px; color:var(--sub); font-size:.8rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a href="../index.html">← アプリ一覧</a></nav>
+  <h1>鉄道路線図 サポート</h1>
+  <p class="lead">全国の鉄道路線を地方ごとに一覧し、選んだ路線の始発駅から終着駅までの線形を地図上に描くオフラインアプリです。</p>
+
+  <h2>よくある質問</h2>
+
+  <div class="faq">
+    <h3>Q. 表示される距離が、時刻表などの営業キロと違います</h3>
+    <p>A. アプリの距離は、路線の線形データから計算した長さです。鉄道事業者が定める営業キロとは異なり、複線が離れて走る区間などを含むため、営業キロより長くなる路線があります。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 「1号線」「3号線」のような名前で表示される路線があります</h3>
+    <p>A. 路線名は国土数値情報に収録された正式名称で表示しています。「ブルーライン」などの愛称は収録していません。事業者名とあわせてご覧ください。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 地図の線が途中で途切れている路線があります</h3>
+    <p>A. 区間の廃止や、第三セクターなど別の事業者への移管によって、同じ路線名のまま区間が離れている路線があります(例: 根室線、鹿児島線)。データのとおりに表示しています。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 終着駅が「—」になっている路線があります</h3>
+    <p>A. 片方の端が信号場などの旅客駅でない地点にある短い接続線では、旅客駅が片側にしかないため、終着駅を「—」と表示しています。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 山手線が環状線として表示されません</h3>
+    <p>A. 収録データでは、山手線は品川〜新宿〜田端の区間として登録されており、田端〜東京〜品川は東北線・東海道線に含まれています。そのため始発駅・終着駅のある路線として表示しています。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 路線の色は何を表していますか?</h3>
+    <p>A. 事業者の種別です。新幹線は緑、JR在来線は青、公営はえんじ、民営は橙、第三セクターは紫で表示します。路線数の横の ⓘ から凡例を確認できます。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 地方ごとの路線数を足すと、全国の路線数より多くなります</h3>
+    <p>A. 複数の地方にまたがる路線は、通過するそれぞれの地方で数えているためです。同じ名前の路線でも、事業者が異なる場合は別の路線として数えています。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 新しく開業した路線や、廃止された路線が反映されていません</h3>
+    <p>A. 収録データの基準年以降の開業・廃止・名称変更は反映されていません。データはアプリの更新にあわせて見直します。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. オフラインで使えますか?</h3>
+    <p>A. 路線と駅のデータはすべてアプリに内蔵されており、一覧の閲覧に通信は不要です。ただし背景地図の表示には通信が必要です。</p>
+  </div>
+
+  <h2>データの出典</h2>
+  <p>「国土数値情報(鉄道データ・行政区域データ)」(国土交通省)を加工して作成しています。</p>
+
+  <h2>お問い合わせ</h2>
+  <p>不具合のご報告・ご要望は、下記メールアドレスまでお願いいたします。</p>
+  <p><a href="mailto:app04460@gmail.com">app04460@gmail.com</a></p>
+
+  <footer><a href="privacy.html" style="color:var(--sub)">プライバシーポリシー</a></footer>
+</div>
+</body>
+</html>
