@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート | ミュージック・ダイアリー</title>
+<style>
+  :root { --bg:#f7f9fb; --card:#ffffff; --text:#1a202c; --sub:#5a6572; --accent:#ff3b30; --line:#e3e8ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#15181c; --card:#1f242a; --text:#e8ecf0; --sub:#9aa4ae; --line:#333a42; }
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+         background:var(--bg); color:var(--text); line-height:1.9; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+  nav { font-size:.85rem; margin-bottom:28px; }
+  nav a { color:var(--sub); text-decoration:none; }
+  nav a:hover { color:var(--accent); }
+  h1 { font-size:1.4rem; margin-bottom:6px; }
+  h1::after { content:""; display:block; width:56px; height:5px; border-radius:3px;
+              background:var(--accent); margin-top:10px; }
+  h2 { font-size:1.05rem; margin:28px 0 8px; }
+  p { margin-bottom:12px; font-size:.95rem; }
+  ul { margin:0 0 12px 1.4em; font-size:.95rem; }
+  li { margin-bottom:4px; }
+  .lead { color:var(--sub); font-size:.9rem; margin:14px 0 30px; }
+  .faq { background:var(--card); border:1px solid var(--line); border-radius:12px;
+         padding:16px 20px; margin-bottom:12px; }
+  .faq h3 { font-size:.95rem; margin-bottom:6px; }
+  .faq p { color:var(--sub); font-size:.9rem; margin:0; }
+  .faq ul, .faq ol { color:var(--sub); font-size:.9rem; margin:6px 0 0 1.4em; }
+  .note { color:var(--sub); font-size:.85rem; }
+  a { color:var(--accent); }
+  footer { margin-top:44px; color:var(--sub); font-size:.8rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a href="../index.html">← アプリ一覧</a></nav>
+  <h1>ミュージック・ダイアリー サポート</h1>
+  <p class="lead">聴いた音楽・観た音楽映像を記録する音楽日記アプリ「ミュージック・ダイアリー」のサポートページです。</p>
+
+  <h2>動作環境</h2>
+  <ul>
+    <li>iPhone(iOS 26以降)</li>
+    <li>無料・アカウント登録不要・オフラインで動作します</li>
+  </ul>
+
+  <h2>主な機能</h2>
+  <ul>
+    <li>「音楽」(聴く記録)と「映像」(観る記録)の2分類で記録</li>
+    <li>作品名・アーティスト名・鑑賞年月日・媒体・メモ・ジャケット画像を記録</li>
+    <li>ジャケットが並ぶ画像表示と、文字中心の一覧表示の切り替え</li>
+    <li>日時順・媒体順の並べ替え、分類・媒体による絞り込み</li>
+    <li>作品名・アーティスト名・メモからの検索</li>
+    <li>年ごとの記録件数のグラフ表示</li>
+    <li>記録アプリ「記録」のバックアップデータからの取り込み</li>
+  </ul>
+
+  <h2>よくある質問</h2>
+
+  <div class="faq">
+    <h3>Q. 記録を追加するには?</h3>
+    <p>A. メイン画面右下の「+」ボタンから追加できます。作品名・アーティスト名・媒体は入力必須です。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. オムニバスやサウンドトラックのアーティスト名は?</h3>
+    <p>A. アーティスト名の初期値は「Various Artists」です。複数のアーティストによる作品は、そのまま保存できます。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 媒体(CD、レコード、配信サービスなど)を追加・変更したい</h3>
+    <p>A. 設定画面の「媒体マスタ設定」から、媒体の追加・名前の変更・並べ替え・削除ができます。記録で使用中の媒体は削除できません。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. ジャケット画像を設定するには?</h3>
+    <p>A. 追加・編集画面の画像部分をタップし、写真ライブラリから選択してください。画像は一覧では正方形に整えて表示されます(元の画像の比率は保持されます)。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 「記録」アプリのデータを取り込むには?</h3>
+    <ol>
+      <li>「記録」アプリでバックアップを作成し、ZIPファイルを「ファイル」アプリに保存します</li>
+      <li>ミュージック・ダイアリーの設定画面で「データをインポート」を選び、ZIPファイルを選択します</li>
+      <li>バックアップに含まれるカテゴリごとに、「音楽」「映像」「取り込まない」を選んで取り込みます</li>
+    </ol>
+    <p style="margin-top:10px">取り込みに関する補足:</p>
+    <ul>
+      <li>取り込んだ記録は、仮の媒体「(インポート・音楽)」「(インポート・映像)」に入ります。各記録を編集して、正しい媒体に振り替えてください</li>
+      <li>「記録」の作者欄が空の場合、アーティスト名は「Various Artists」になります</li>
+      <li>「記録」側の備考欄は、そのままメモに入ります</li>
+      <li>バックアップに画像ファイルが含まれていない記録は、画像なしで取り込まれます</li>
+      <li>同じ作品名・同じ日付の記録がすでにある場合は、重複して追加されません</li>
+    </ul>
+  </div>
+
+  <div class="faq">
+    <h3>Q. データのバックアップや機種変更での引き継ぎは?</h3>
+    <p>A. 現在のバージョンでは、データはこの端末内にのみ保存され、iCloud同期やエクスポートには対応していません。<strong>アプリを削除すると記録もすべて削除されます</strong>のでご注意ください。iPhone本体のバックアップ(iCloudバックアップやパソコンへのバックアップ)から端末ごと復元した場合は、記録も復元されます。</p>
+  </div>
+
+  <div class="faq">
+    <h3>Q. 評価(星や点数)をつけたい</h3>
+    <p>A. 本アプリは「いつ、何を聴いたか」をそのまま残すことを大切にしており、評価の入力欄は設けていません。感想はメモ欄をご利用ください。</p>
+  </div>
+
+  <h2>お問い合わせ</h2>
+  <p>不具合のご報告やご要望は、以下までお寄せください。</p>
+  <p><a href="mailto:app04460@gmail.com">app04460@gmail.com</a></p>
+  <p class="note">お問い合わせの際は、お使いのiPhoneの機種名・iOSのバージョン・アプリのバージョン(設定画面の「アプリについて」で確認できます)をお知らせいただけると、調査がスムーズです。</p>
+  <p class="note">※個人開発のため、返信までお時間をいただく場合があります。あらかじめご了承ください。</p>
+
+  <footer><a href="privacy.html" style="color:var(--sub)">プライバシーポリシー</a></footer>
+</div>
+</body>
+</html>
